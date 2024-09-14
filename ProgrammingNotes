@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#Cpp-display,#python-display, #javascript-display, #java-display, #csharp-display {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+ .container {
+    width: 100%; /* Ensures the container takes up the full width */
+    max-width: 1000px; /* Adjust this to the desired maximum width */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds some padding */
+    word-wrap: break-word; /* Ensures long text breaks to the next line */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+pre, code {
+    white-space: pre-wrap; /* Allows long lines in <pre> or <code> to wrap */
+    word-wrap: break-word;
+}
+a {
+    text-decoration: none;
+}
+    /* Style the navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            border: 2px solid;
+        }
+        /* Style the dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style the dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Add a background color to dropdown links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: white;
+            color: skyblue;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programming Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">C++</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#csharp">C#</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id= "C">         
+            <div id="Cpp-display">               
+                <h2>C++ – Table of Content</h2>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Overview of C++ 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Introduction to C++</a>
+                            <a href="#">Features of C++</a>
+                            <a href="#">History of C++ </a>
+                            <a href="#">Intresting facts about C++</a>
+                            <a href="#">Setting up C++ development</a>
+                            <a href="#">Similarities and differences between C and C++</a>
+                        </div>
+                    </div>
+                </div>   
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">C++ Basics
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">First C++ Program</a>
+                            <a href="#">C++ Basic Syntax</a>
+                            <a href="#">C++ Comments</a>
+                            <a href="#">C++ Tokens</a>
+                            <a href="#">C++ Identifiers</a>
+                            <a href="#">C++ Keywords</a>
+                            <a href="#">Difference between Keyword and Identifier</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">C++ Variables and Constants
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">C++ Variables</a>
+                            <a href="#">C++ Constants</a>
+                            <a href="#">Scope of C++ Variables</a>
+                            <a href="#">C++ Storage Classes</a>
+                            <a href="#">C++ Static Variables</a>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">C++ Data Types and Literals
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">C++ Data Types</a>
+                            <a href="#">C++ Literals</a>
+                            <a href="#">C++ Derived Data Types</a>
+                            <a href="#">C++ Data Type Ranges and Their Macros</a>
+                            <a href="#">C++ Type Modifiers</a>
+                            <a href="#">C++ Data Type Conversion</a>
+                            <a href="#">C++ Typecasting Operators</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">C++ Operators
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">C++ Operators</a>
+                            <a href="#">C++ Arithmetic Operators</a>
+                            <a href="#">C++ Unary Operators</a>
+                            <a href="#">C++ Bitwise Operators</a>
+                            <a href="#">C++ Relational Operators</a>
+                            <a href="#">C++ Logical Operators</a>
+                            <a href="#">C++ Assignment Operators</a>
+                            <a href="#">C++ Ternary/Conditional Operators</a>
+                            <a href="#">C++ Sizeof Operator</a>
+                            <a href="#">C++ Scope Resolution Operator</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">C++ Input/Output
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">C++ Basic Input / Output</a>
+                            <a href="#">C++ Standard Input Stream (cin)</a>
+                            <a href="#">C++ Standard Output Stream (cout)</a>
+                            <a href="#">C++ Standard Error Stream (cerr)</a>
+                            <a href="#">C++ Input / Output Manipulator</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="dropdown-content"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="python">
+            <div id="Python-display">               
+                <h2>Python – Table of Content</h2>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="javascript">
+            <div id=JavaScript-display">               
+                <h2>Javascript – Table of Content</h2>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                            <a href="#"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
